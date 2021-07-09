@@ -1,4 +1,7 @@
 @ECHO OFF 
+ECHO In this example, tar folder is being compressed.
+ECHO.
+
 ECHO  Folder to compress: %~dp0tar
 ECHO  Cabinet file output: %~dp0output\cabinetFile.cab
 
