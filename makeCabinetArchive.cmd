@@ -6,7 +6,8 @@ ECHO  Folder to compress: %~dp0tar
 ECHO  Cabinet file output: %~dp0output\cabinetFile.cab
 
 ECHO Listing paths of files that will be archived, and saving them into a File
-DIR "%~dp0tar" /s /b /a-d > "%~dp0files.txt"
+:: DIR "%~dp0tar" /s /b /a-d > "%~dp0files.txt"
+DIR "%~dp0" /s /b /a-d > "%~dp0files.txt"
 
 ECHO Creating a new folder.
 MKDIR "%~dp0CompressedCabinetFiles"
